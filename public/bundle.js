@@ -25311,7 +25311,18 @@ var routes = exports.routes = _react2.default.createElement(
   'div',
   null,
   _react2.default.createElement(_Navbar2.default, null),
-  _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/issues', component: _IssueIndexContainer2.default })
+  _react2.default.createElement(
+    _reactRouterDom.Switch,
+    null,
+    _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/issues', component: _IssueIndexContainer2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/', render: function render() {
+          return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/issues' });
+        } })
+    )
+  )
 );
 
 /***/ }),

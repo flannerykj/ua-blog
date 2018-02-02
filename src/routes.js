@@ -9,7 +9,12 @@ export const routes =
   (
     <div>
       <Navbar />
+      <Switch>
+        <div>
       <Route exact path='/issues' component={IssueIndexPage}/>
+      <Route path='/' render={(()=> (<Redirect to='/issues'/>))}/>
+    </div>
+  </Switch>
       </div>
     )
 
