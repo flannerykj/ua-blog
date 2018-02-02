@@ -1,0 +1,55 @@
+
+@import 'bulma/sass/utilities/_all';
+@import 'bulma/sass/components/navbar';
+@import 'bulma/sass/elements/button';
+@import 'bulma/sass/components/card';
+@import 'bulma/sass/base/generic';
+@import 'bulma/sass/components/dropdown';
+@import 'bulma/sass/elements/form';
+@import 'bulma/sass/elements/table';
+@import 'bulma/sass/grid/tiles';
+@import 'bulma/sass/elements/other';
+
+$site-title-font: "Arial Black", sans-serif;
+$bg-color-main: #e6e6e6;
+
+html, body {
+  background-color: $bg-color-main;
+  height: 100%;
+  margin: 0
+
+}
+i.fas {
+  color: black;
+  z-index: 5;
+  width: 30px!important;
+  height: 30px !important;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.navbar {
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+.page-content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.dropdown {
+  margin-bottom: 20px;
+}
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  th {
+  }
+  tbody {
+    tr {
+      td {
+        border-width: 0 0 1px;
+      }
+    }
+  }
+}
